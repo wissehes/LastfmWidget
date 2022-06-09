@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		890D84C8284F5DD4000123AD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D84C7284F5DD4000123AD /* API.swift */; };
+		895E28E728526E9A00FB9E43 /* LastFM_WidgetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E28E628526E9A00FB9E43 /* LastFM_WidgetsApp.swift */; };
+		895E28E928526E9A00FB9E43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E28E828526E9A00FB9E43 /* ContentView.swift */; };
+		895E28EB28526E9B00FB9E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895E28EA28526E9B00FB9E43 /* Assets.xcassets */; };
+		895E28EE28526E9B00FB9E43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895E28ED28526E9B00FB9E43 /* Preview Assets.xcassets */; };
 		8974BC8A28524D60006604D3 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974BC8928524D60006604D3 /* ImageError.swift */; };
 		8974BC8B28524D6A006604D3 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974BC8928524D60006604D3 /* ImageError.swift */; };
 		8994411E284F4577000B6D7C /* LastfmWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994411D284F4577000B6D7C /* LastfmWidgetApp.swift */; };
@@ -66,6 +70,11 @@
 /* Begin PBXFileReference section */
 		890D84C7284F5DD4000123AD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		890D84C9284F5FA4000123AD /* API Things.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "API Things.md"; sourceTree = "<group>"; };
+		895E28E428526E9A00FB9E43 /* LastFM Widgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LastFM Widgets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		895E28E628526E9A00FB9E43 /* LastFM_WidgetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFM_WidgetsApp.swift; sourceTree = "<group>"; };
+		895E28E828526E9A00FB9E43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		895E28EA28526E9B00FB9E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		895E28ED28526E9B00FB9E43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8974BC8828524A7E006604D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8974BC8928524D60006604D3 /* ImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageError.swift; sourceTree = "<group>"; };
 		8994411A284F4577000B6D7C /* LastfmWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastfmWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		895E28E128526E9A00FB9E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89944117284F4577000B6D7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,9 +139,31 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		895E28E528526E9A00FB9E43 /* LastFM Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				895E28E628526E9A00FB9E43 /* LastFM_WidgetsApp.swift */,
+				895E28E828526E9A00FB9E43 /* ContentView.swift */,
+				895E28EA28526E9B00FB9E43 /* Assets.xcassets */,
+				895E28EC28526E9B00FB9E43 /* Preview Content */,
+			);
+			path = "LastFM Widgets";
+			sourceTree = "<group>";
+		};
+		895E28EC28526E9B00FB9E43 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				895E28ED28526E9B00FB9E43 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		8974BC8F28524DFE006604D3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				89B12BE32850F65900AB9816 /* Enums */,
+				890D84C6284F5D8A000123AD /* Models */,
+				89944131284F4CDD000B6D7C /* API */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -134,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				8994411C284F4577000B6D7C /* LastfmWidget */,
+				895E28E528526E9A00FB9E43 /* LastFM Widgets */,
 				8974BC8F28524DFE006604D3 /* Shared */,
 				89F962D3284FABF100CF0CAE /* TopAlbumsWidget */,
 				89F962CE284FABF100CF0CAE /* Frameworks */,
@@ -146,6 +185,7 @@
 			children = (
 				8994411A284F4577000B6D7C /* LastfmWidget.app */,
 				89F962CD284FABF100CF0CAE /* TopAlbumsWidgetExtension.appex */,
+				895E28E428526E9A00FB9E43 /* LastFM Widgets.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,9 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				8974BC8828524A7E006604D3 /* Info.plist */,
-				89B12BE32850F65900AB9816 /* Enums */,
-				890D84C6284F5D8A000123AD /* Models */,
-				89944131284F4CDD000B6D7C /* API */,
 				89F962C2284FA6AC00CF0CAE /* Views */,
 				8994411D284F4577000B6D7C /* LastfmWidgetApp.swift */,
 				8994411F284F4577000B6D7C /* ContentView.swift */,
@@ -227,6 +264,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		895E28E328526E9A00FB9E43 /* LastFM Widgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 895E28F128526E9B00FB9E43 /* Build configuration list for PBXNativeTarget "LastFM Widgets" */;
+			buildPhases = (
+				895E28E028526E9A00FB9E43 /* Sources */,
+				895E28E128526E9A00FB9E43 /* Frameworks */,
+				895E28E228526E9A00FB9E43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LastFM Widgets";
+			productName = "LastFM Widgets";
+			productReference = 895E28E428526E9A00FB9E43 /* LastFM Widgets.app */;
+			productType = "com.apple.product-type.application";
+		};
 		89944119284F4577000B6D7C /* LastfmWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89944129284F457C000B6D7C /* Build configuration list for PBXNativeTarget "LastfmWidget" */;
@@ -279,6 +333,9 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					895E28E328526E9A00FB9E43 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
 					89944119284F4577000B6D7C = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -304,12 +361,22 @@
 			projectRoot = "";
 			targets = (
 				89944119284F4577000B6D7C /* LastfmWidget */,
+				895E28E328526E9A00FB9E43 /* LastFM Widgets */,
 				89F962CC284FABF100CF0CAE /* TopAlbumsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		895E28E228526E9A00FB9E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				895E28EE28526E9B00FB9E43 /* Preview Assets.xcassets in Resources */,
+				895E28EB28526E9B00FB9E43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89944118284F4577000B6D7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +398,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		895E28E028526E9A00FB9E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				895E28E928526E9A00FB9E43 /* ContentView.swift in Sources */,
+				895E28E728526E9A00FB9E43 /* LastFM_WidgetsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89944116284F4577000B6D7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,6 +453,69 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		895E28EF28526E9B00FB9E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LastFM Widgets/Preview Content\"";
+				DEVELOPMENT_TEAM = U3CH3X8GK4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.wissehes.LastFM-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		895E28F028526E9B00FB9E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LastFM Widgets/Preview Content\"";
+				DEVELOPMENT_TEAM = U3CH3X8GK4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.wissehes.LastFM-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		89944127284F457C000B6D7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -611,6 +750,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		895E28F128526E9B00FB9E43 /* Build configuration list for PBXNativeTarget "LastFM Widgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				895E28EF28526E9B00FB9E43 /* Debug */,
+				895E28F028526E9B00FB9E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		89944115284F4577000B6D7C /* Build configuration list for PBXProject "LastfmWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
