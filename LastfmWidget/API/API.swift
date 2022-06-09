@@ -54,7 +54,7 @@ class API {
         }
     }
     
-    static func widgetTopAlbum(completion: @escaping (Result<BasicAlbum, TopAlbumsError>) -> Void) {
+    static func widgetTopAlbum(period: Period, completion: @escaping (Result<BasicAlbum, TopAlbumsError>) -> Void) {
         self.topAlbums { result in
             switch result {
             case .success(let topalbums):
@@ -98,9 +98,4 @@ class API {
             }
         }
     }
-}
-
-enum ImageError: Error {
-    case afError(AFError)
-    case imageError
 }
