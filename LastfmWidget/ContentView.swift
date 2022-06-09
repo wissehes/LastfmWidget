@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedTab = 1
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                NavigationLink("Top Artists", destination: TopArtistView())
+                NavigationLink("Top Albums", destination: TopAlbumsView())
+            }.listStyle(.sidebar)
+        }
     }
 }
 

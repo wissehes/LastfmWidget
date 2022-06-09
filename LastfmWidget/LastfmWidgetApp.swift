@@ -11,7 +11,7 @@ import SwiftUI
 struct LastfmWidgetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().frame(width: 500, height: 500)
         }
     }
 }
