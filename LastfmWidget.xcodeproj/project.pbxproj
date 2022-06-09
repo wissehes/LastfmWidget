@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		890D84C8284F5DD4000123AD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D84C7284F5DD4000123AD /* API.swift */; };
+		8974BC8A28524D60006604D3 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974BC8928524D60006604D3 /* ImageError.swift */; };
+		8974BC8B28524D6A006604D3 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974BC8928524D60006604D3 /* ImageError.swift */; };
 		8994411E284F4577000B6D7C /* LastfmWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994411D284F4577000B6D7C /* LastfmWidgetApp.swift */; };
 		89944120284F4577000B6D7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994411F284F4577000B6D7C /* ContentView.swift */; };
 		89944122284F457C000B6D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89944121284F457C000B6D7C /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		890D84C7284F5DD4000123AD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		890D84C9284F5FA4000123AD /* API Things.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "API Things.md"; sourceTree = "<group>"; };
+		8974BC8828524A7E006604D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8974BC8928524D60006604D3 /* ImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageError.swift; sourceTree = "<group>"; };
 		8994411A284F4577000B6D7C /* LastfmWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastfmWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8994411D284F4577000B6D7C /* LastfmWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastfmWidgetApp.swift; sourceTree = "<group>"; };
 		8994411F284F4577000B6D7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,10 +123,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8974BC8F28524DFE006604D3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		89944111284F4577000B6D7C = {
 			isa = PBXGroup;
 			children = (
 				8994411C284F4577000B6D7C /* LastfmWidget */,
+				8974BC8F28524DFE006604D3 /* Shared */,
 				89F962D3284FABF100CF0CAE /* TopAlbumsWidget */,
 				89F962CE284FABF100CF0CAE /* Frameworks */,
 				8994411B284F4577000B6D7C /* Products */,
@@ -141,6 +153,7 @@
 		8994411C284F4577000B6D7C /* LastfmWidget */ = {
 			isa = PBXGroup;
 			children = (
+				8974BC8828524A7E006604D3 /* Info.plist */,
 				89B12BE32850F65900AB9816 /* Enums */,
 				890D84C6284F5D8A000123AD /* Models */,
 				89944131284F4CDD000B6D7C /* API */,
@@ -176,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				89B12BE42850F67200AB9816 /* TopAlbumsError.swift */,
+				8974BC8928524D60006604D3 /* ImageError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -329,6 +343,7 @@
 				8994411E284F4577000B6D7C /* LastfmWidgetApp.swift in Sources */,
 				89944130284F4635000B6D7C /* Config.swift in Sources */,
 				89B12BE52850F67200AB9816 /* TopAlbumsError.swift in Sources */,
+				8974BC8A28524D60006604D3 /* ImageError.swift in Sources */,
 				890D84C8284F5DD4000123AD /* API.swift in Sources */,
 				89F962C1284FA01D00CF0CAE /* LastFMTopArtistsResponse.swift in Sources */,
 				89F962C4284FA6BF00CF0CAE /* TopArtistView.swift in Sources */,
@@ -347,6 +362,7 @@
 				89F962D5284FABF100CF0CAE /* TopAlbumsWidget.swift in Sources */,
 				89F962EA284FAF1A00CF0CAE /* API.swift in Sources */,
 				89F962E9284FADAE00CF0CAE /* BasicAlbum.swift in Sources */,
+				8974BC8B28524D6A006604D3 /* ImageError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +505,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LastfmWidget/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,6 +535,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LastfmWidget/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

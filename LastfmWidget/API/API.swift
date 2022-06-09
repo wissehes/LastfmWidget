@@ -9,7 +9,6 @@ import Foundation
 import Alamofire
 import AppKit
 
-
 class API {
     static let lfm: Session = {
         let configuration = URLSessionConfiguration.af.default
@@ -36,13 +35,13 @@ class API {
         }
     }
     
-    static func topAlbums(completion: @escaping (Result<LastFMTopAlbums, AFError>) -> Void) {
+    static func topAlbums(_ period: LastfmPeriod = .overall,completion: @escaping (Result<LastFMTopAlbums, AFError>) -> Void) {
         let parameters: Parameters = [
             "method": "user.gettopalbums",
             "user": Config.user,
             "api_key": Config.LastFMApiKey,
             "format": "json",
-            "period": "7day"
+            "period": period.lastfmValue
         ]
         lfm.request("\(Config.LastFMApi)", parameters: parameters).validate().responseDecodable(of:LastFMTopAlbumsResponse.self) { response in
             switch response.result {
@@ -54,7 +53,7 @@ class API {
         }
     }
     
-    static func widgetTopAlbum(period: Period, completion: @escaping (Result<BasicAlbum, TopAlbumsError>) -> Void) {
+    static func widgetTopAlbum(period: LastfmPeriod, completion: @escaping (Result<BasicAlbum, TopAlbumsError>) -> Void) {
         self.topAlbums { result in
             switch result {
             case .success(let topalbums):
@@ -96,6 +95,27 @@ class API {
             case .failure(let err):
                 completion(.failure(.afError(err)))
             }
+        }
+    }
+}
+
+extension LastfmPeriod {
+    var lastfmValue: String {
+        switch self {
+        case .overall:
+            return "overall"
+        case .lastWeek:
+            return "7day"
+        case .lastMonth:
+            return "1month"
+        case .threemonth:
+            return "3month"
+        case .sixmonth:
+            return "6month"
+        case .lastYear:
+            return "12month"
+        default:
+            return "overall"
         }
     }
 }

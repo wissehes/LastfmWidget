@@ -21,7 +21,7 @@ struct Provider: IntentTimelineProvider {
     }
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        API.widgetTopAlbum { result in
+        API.widgetTopAlbum(period: configuration.period) { result in
             var entries: [SimpleEntry] = []
             var policy: TimelineReloadPolicy = .after(Calendar.current.date(byAdding: .hour, value: 12, to: Date())!)
             
