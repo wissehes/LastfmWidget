@@ -7,7 +7,9 @@
 
 import Foundation
 import Alamofire
-import AppKit
+import UIKit
+import SwiftUI
+import UIImageColors
 
 class API {
     static let lfm: Session = {
@@ -35,7 +37,7 @@ class API {
         }
     }
     
-    static func topAlbums(_ period: LastfmPeriod = .overall,completion: @escaping (Result<LastFMTopAlbums, AFError>) -> Void) {
+    static func topAlbums(_ period: LastfmPeriod = .overall, completion: @escaping (Result<LastFMTopAlbums, AFError>) -> Void) {
         let parameters: Parameters = [
             "method": "user.gettopalbums",
             "user": Config.user,
@@ -44,6 +46,7 @@ class API {
             "period": period.lastfmValue
         ]
         lfm.request("\(Config.LastFMApi)", parameters: parameters).validate().responseDecodable(of:LastFMTopAlbumsResponse.self) { response in
+            //            print(response.response)
             switch response.result {
             case .success(let data):
                 completion(.success(data.topalbums))
@@ -54,21 +57,20 @@ class API {
     }
     
     static func widgetTopAlbum(period: LastfmPeriod, completion: @escaping (Result<BasicAlbum, TopAlbumsError>) -> Void) {
-        self.topAlbums { result in
+        self.topAlbums(period) { result in
             switch result {
             case .success(let topalbums):
                 if let album = topalbums.album.first {
                     var basicAlbum = BasicAlbum(from: album)
                     
                     if let imageurl = basicAlbum.image {
-                        self.getImageFromURL(imageurl) { result in
-                            switch result {
-                            case .success(let image):
-                                basicAlbum.nsImage = image
-                                completion(.success(basicAlbum))
-                            case .failure(_):
-                                completion(.success(basicAlbum))
+                        self.getImageFromURL(imageurl) { image in
+                            let colors = image.getColors()
+                            if let colors = colors {
+                                basicAlbum.backgroundColor = Color(uiColor: colors.background)
                             }
+                            basicAlbum.uiImage = image
+                            completion(.success(basicAlbum))
                         }
                     } else {
                         completion(.success(basicAlbum))
@@ -82,18 +84,18 @@ class API {
         }
     }
     
-    static private func getImageFromURL(_ url: URL, completion: @escaping (Result <NSImage, ImageError>) -> Void) {
+    static private func getImageFromURL(_ url: URL, completion: @escaping (UIImage) -> Void) {
         lfm.request(url).responseData { response in
             switch response.result {
             case .success(let data):
-                let image = NSImage(data: data)
+                let image = UIImage(data: data)
                 if let image = image {
-                    completion(.success(image))
+                    completion(image)
                 } else {
-                    completion(.failure(.imageError))
+                    completion(UIImage(systemName: "music.note")!)
                 }
-            case .failure(let err):
-                completion(.failure(.afError(err)))
+            case .failure(_):
+                completion(UIImage(systemName: "music.note")!)
             }
         }
     }
@@ -115,7 +117,26 @@ extension LastfmPeriod {
         case .lastYear:
             return "12month"
         default:
-            return "overall"
+            return "7day"
+        }
+    }
+    
+    var periodText: String {
+        switch self {
+        case .overall:
+            return "#1 album of all time"
+        case .lastWeek:
+            return "#1 album last week"
+        case .lastMonth:
+            return "#1 album last month"
+        case .threemonth:
+            return "#1 album last 3 months"
+        case .sixmonth:
+            return "#1 album last 6 months"
+        case .lastYear:
+            return "#1 album last year"
+        default:
+            return "#1 album last week"
         }
     }
 }
