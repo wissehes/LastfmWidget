@@ -7,60 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		890D84C8284F5DD4000123AD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D84C7284F5DD4000123AD /* API.swift */; };
 		895E28E728526E9A00FB9E43 /* LastFM_WidgetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E28E628526E9A00FB9E43 /* LastFM_WidgetsApp.swift */; };
 		895E28E928526E9A00FB9E43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E28E828526E9A00FB9E43 /* ContentView.swift */; };
 		895E28EB28526E9B00FB9E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895E28EA28526E9B00FB9E43 /* Assets.xcassets */; };
 		895E28EE28526E9B00FB9E43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895E28ED28526E9B00FB9E43 /* Preview Assets.xcassets */; };
-		8974BC8A28524D60006604D3 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974BC8928524D60006604D3 /* ImageError.swift */; };
-		8974BC8B28524D6A006604D3 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974BC8928524D60006604D3 /* ImageError.swift */; };
-		8994411E284F4577000B6D7C /* LastfmWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994411D284F4577000B6D7C /* LastfmWidgetApp.swift */; };
-		89944120284F4577000B6D7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994411F284F4577000B6D7C /* ContentView.swift */; };
-		89944122284F457C000B6D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89944121284F457C000B6D7C /* Assets.xcassets */; };
-		89944125284F457C000B6D7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89944124284F457C000B6D7C /* Preview Assets.xcassets */; };
-		8994412E284F45A1000B6D7C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8994412D284F45A1000B6D7C /* Alamofire */; };
-		89944130284F4635000B6D7C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994412F284F4635000B6D7C /* Config.swift */; };
-		89B12BE52850F67200AB9816 /* TopAlbumsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B12BE42850F67200AB9816 /* TopAlbumsError.swift */; };
-		89B12BE62850F67200AB9816 /* TopAlbumsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B12BE42850F67200AB9816 /* TopAlbumsError.swift */; };
-		89B12BE72850FA7200AB9816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89944121284F457C000B6D7C /* Assets.xcassets */; };
-		89F962C1284FA01D00CF0CAE /* LastFMTopArtistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C0284FA01D00CF0CAE /* LastFMTopArtistsResponse.swift */; };
-		89F962C4284FA6BF00CF0CAE /* TopArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C3284FA6BF00CF0CAE /* TopArtistView.swift */; };
-		89F962C6284FAA6600CF0CAE /* LastFMTopAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C5284FAA6600CF0CAE /* LastFMTopAlbumsResponse.swift */; };
-		89F962C8284FAAB400CF0CAE /* TopAlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C7284FAAB400CF0CAE /* TopAlbumsView.swift */; };
-		89F962D0284FABF100CF0CAE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F962CF284FABF100CF0CAE /* WidgetKit.framework */; };
-		89F962D2284FABF100CF0CAE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F962D1284FABF100CF0CAE /* SwiftUI.framework */; };
-		89F962D5284FABF100CF0CAE /* TopAlbumsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962D4284FABF100CF0CAE /* TopAlbumsWidget.swift */; };
-		89F962D8284FABF300CF0CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F962D7284FABF300CF0CAE /* Assets.xcassets */; };
-		89F962DB284FABF300CF0CAE /* TopAlbumsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 89F962D6284FABF100CF0CAE /* TopAlbumsWidget.intentdefinition */; };
-		89F962DC284FABF300CF0CAE /* TopAlbumsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 89F962D6284FABF100CF0CAE /* TopAlbumsWidget.intentdefinition */; };
-		89F962DF284FABF300CF0CAE /* TopAlbumsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 89F962CD284FABF100CF0CAE /* TopAlbumsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		89F962E5284FAD2A00CF0CAE /* LastFMTopArtistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C0284FA01D00CF0CAE /* LastFMTopArtistsResponse.swift */; };
-		89F962E6284FAD3200CF0CAE /* LastFMTopAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C5284FAA6600CF0CAE /* LastFMTopAlbumsResponse.swift */; };
-		89F962E8284FAD7000CF0CAE /* BasicAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962E7284FAD7000CF0CAE /* BasicAlbum.swift */; };
-		89F962E9284FADAE00CF0CAE /* BasicAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962E7284FAD7000CF0CAE /* BasicAlbum.swift */; };
-		89F962EA284FAF1A00CF0CAE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D84C7284F5DD4000123AD /* API.swift */; };
-		89F962EC284FAF3000CF0CAE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 89F962EB284FAF3000CF0CAE /* Alamofire */; };
-		89F962ED284FB27E00CF0CAE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994412F284F4635000B6D7C /* Config.swift */; };
+		895E28F228526F0300FB9E43 /* TopAlbumsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B12BE42850F67200AB9816 /* TopAlbumsError.swift */; };
+		895E28F328526F0500FB9E43 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974BC8928524D60006604D3 /* ImageError.swift */; };
+		895E28F428526F0900FB9E43 /* LastFMTopArtistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C0284FA01D00CF0CAE /* LastFMTopArtistsResponse.swift */; };
+		895E28F528526F0B00FB9E43 /* LastFMTopAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C5284FAA6600CF0CAE /* LastFMTopAlbumsResponse.swift */; };
+		895E28F628526F0D00FB9E43 /* BasicAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962E7284FAD7000CF0CAE /* BasicAlbum.swift */; };
+		895E28F728526F1200FB9E43 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D84C7284F5DD4000123AD /* API.swift */; };
+		895E28FC2852709500FB9E43 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994412F284F4635000B6D7C /* Config.swift */; };
+		895E29022852718700FB9E43 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F962CF284FABF100CF0CAE /* WidgetKit.framework */; };
+		895E29032852718700FB9E43 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F962D1284FABF100CF0CAE /* SwiftUI.framework */; };
+		895E29062852718700FB9E43 /* TopAlbumsWidgetiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E29052852718700FB9E43 /* TopAlbumsWidgetiOS.swift */; };
+		895E29092852718900FB9E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895E29082852718900FB9E43 /* Assets.xcassets */; };
+		895E290B2852718900FB9E43 /* TopAlbumsWidgetiOS.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 895E29072852718700FB9E43 /* TopAlbumsWidgetiOS.intentdefinition */; };
+		895E290C2852718900FB9E43 /* TopAlbumsWidgetiOS.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 895E29072852718700FB9E43 /* TopAlbumsWidgetiOS.intentdefinition */; };
+		895E290F2852718900FB9E43 /* TopAlbumsWidgetiOSExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 895E29012852718700FB9E43 /* TopAlbumsWidgetiOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		895E291B285271AD00FB9E43 /* LastFMTopAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C5284FAA6600CF0CAE /* LastFMTopAlbumsResponse.swift */; };
+		895E291C285271AD00FB9E43 /* BasicAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962E7284FAD7000CF0CAE /* BasicAlbum.swift */; };
+		895E291D285271AD00FB9E43 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D84C7284F5DD4000123AD /* API.swift */; };
+		895E291E285271AD00FB9E43 /* LastFMTopArtistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F962C0284FA01D00CF0CAE /* LastFMTopArtistsResponse.swift */; };
+		895E291F285271AD00FB9E43 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994412F284F4635000B6D7C /* Config.swift */; };
+		895E2920285271AD00FB9E43 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974BC8928524D60006604D3 /* ImageError.swift */; };
+		895E2921285271AD00FB9E43 /* TopAlbumsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B12BE42850F67200AB9816 /* TopAlbumsError.swift */; };
+		89DB8B942852740400D265F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 89DB8B932852740400D265F6 /* Alamofire */; };
+		89DB8B962852744400D265F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 89DB8B952852744400D265F6 /* Alamofire */; };
+		89DB8B972852750C00D265F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895E28EA28526E9B00FB9E43 /* Assets.xcassets */; };
+		89DB8B9B28527D5800D265F6 /* SmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB8B9928527D2B00D265F6 /* SmallView.swift */; };
+		89DB8B9E2852874900D265F6 /* MediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB8B9C2852873200D265F6 /* MediumView.swift */; };
+		89DB8BA02852881A00D265F6 /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB8B9F2852881A00D265F6 /* BackgroundGradient.swift */; };
+		89DB8BA328528B5800D265F6 /* UIImageColors in Frameworks */ = {isa = PBXBuildFile; productRef = 89DB8BA228528B5800D265F6 /* UIImageColors */; };
+		89DB8BA528528B8B00D265F6 /* UIImageColors in Frameworks */ = {isa = PBXBuildFile; productRef = 89DB8BA428528B8B00D265F6 /* UIImageColors */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		89F962DD284FABF300CF0CAE /* PBXContainerItemProxy */ = {
+		895E290D2852718900FB9E43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 89944112284F4577000B6D7C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 89F962CC284FABF100CF0CAE;
-			remoteInfo = TopAlbumsWidgetExtension;
+			remoteGlobalIDString = 895E29002852718700FB9E43;
+			remoteInfo = TopAlbumsWidgetiOSExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		89F962E3284FABF300CF0CAE /* Embed App Extensions */ = {
+		895E29132852718900FB9E43 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				89F962DF284FABF300CF0CAE /* TopAlbumsWidgetExtension.appex in Embed App Extensions */,
+				895E290F2852718900FB9E43 /* TopAlbumsWidgetiOSExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,9 +74,14 @@
 		895E28E828526E9A00FB9E43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		895E28EA28526E9B00FB9E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		895E28ED28526E9B00FB9E43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		895E28F928526F5300FB9E43 /* LastFM-Widgets-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LastFM-Widgets-Info.plist"; sourceTree = SOURCE_ROOT; };
+		895E29012852718700FB9E43 /* TopAlbumsWidgetiOSExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TopAlbumsWidgetiOSExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		895E29052852718700FB9E43 /* TopAlbumsWidgetiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsWidgetiOS.swift; sourceTree = "<group>"; };
+		895E29072852718700FB9E43 /* TopAlbumsWidgetiOS.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = TopAlbumsWidgetiOS.intentdefinition; sourceTree = "<group>"; };
+		895E29082852718900FB9E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		895E290A2852718900FB9E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8974BC8828524A7E006604D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8974BC8928524D60006604D3 /* ImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageError.swift; sourceTree = "<group>"; };
-		8994411A284F4577000B6D7C /* LastfmWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastfmWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8994411D284F4577000B6D7C /* LastfmWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastfmWidgetApp.swift; sourceTree = "<group>"; };
 		8994411F284F4577000B6D7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89944121284F457C000B6D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,18 +89,15 @@
 		89944126284F457C000B6D7C /* LastfmWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LastfmWidget.entitlements; sourceTree = "<group>"; };
 		8994412F284F4635000B6D7C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		89B12BE42850F67200AB9816 /* TopAlbumsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsError.swift; sourceTree = "<group>"; };
+		89DB8B9928527D2B00D265F6 /* SmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallView.swift; sourceTree = "<group>"; };
+		89DB8B9C2852873200D265F6 /* MediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumView.swift; sourceTree = "<group>"; };
+		89DB8B9F2852881A00D265F6 /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
 		89F962C0284FA01D00CF0CAE /* LastFMTopArtistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFMTopArtistsResponse.swift; sourceTree = "<group>"; };
 		89F962C3284FA6BF00CF0CAE /* TopArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistView.swift; sourceTree = "<group>"; };
 		89F962C5284FAA6600CF0CAE /* LastFMTopAlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFMTopAlbumsResponse.swift; sourceTree = "<group>"; };
 		89F962C7284FAAB400CF0CAE /* TopAlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsView.swift; sourceTree = "<group>"; };
-		89F962CD284FABF100CF0CAE /* TopAlbumsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TopAlbumsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F962CF284FABF100CF0CAE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		89F962D1284FABF100CF0CAE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		89F962D4284FABF100CF0CAE /* TopAlbumsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsWidget.swift; sourceTree = "<group>"; };
-		89F962D6284FABF100CF0CAE /* TopAlbumsWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = TopAlbumsWidget.intentdefinition; sourceTree = "<group>"; };
-		89F962D7284FABF300CF0CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		89F962D9284FABF300CF0CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89F962DA284FABF300CF0CAE /* TopAlbumsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TopAlbumsWidget.entitlements; sourceTree = "<group>"; };
 		89F962E7284FAD7000CF0CAE /* BasicAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAlbum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,24 +106,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89DB8BA328528B5800D265F6 /* UIImageColors in Frameworks */,
+				89DB8B942852740400D265F6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89944117284F4577000B6D7C /* Frameworks */ = {
+		895E28FE2852718700FB9E43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8994412E284F45A1000B6D7C /* Alamofire in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89F962CA284FABF100CF0CAE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89F962EC284FAF3000CF0CAE /* Alamofire in Frameworks */,
-				89F962D2284FABF100CF0CAE /* SwiftUI.framework in Frameworks */,
-				89F962D0284FABF100CF0CAE /* WidgetKit.framework in Frameworks */,
+				89DB8BA528528B8B00D265F6 /* UIImageColors in Frameworks */,
+				89DB8B962852744400D265F6 /* Alamofire in Frameworks */,
+				895E29032852718700FB9E43 /* SwiftUI.framework in Frameworks */,
+				895E29022852718700FB9E43 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +138,7 @@
 		895E28E528526E9A00FB9E43 /* LastFM Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				895E28F928526F5300FB9E43 /* LastFM-Widgets-Info.plist */,
 				895E28E628526E9A00FB9E43 /* LastFM_WidgetsApp.swift */,
 				895E28E828526E9A00FB9E43 /* ContentView.swift */,
 				895E28EA28526E9B00FB9E43 /* Assets.xcassets */,
@@ -158,9 +155,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		895E29042852718700FB9E43 /* TopAlbumsWidgetiOS */ = {
+			isa = PBXGroup;
+			children = (
+				89DB8B9828527D1600D265F6 /* Views */,
+				895E29052852718700FB9E43 /* TopAlbumsWidgetiOS.swift */,
+				895E29072852718700FB9E43 /* TopAlbumsWidgetiOS.intentdefinition */,
+				895E29082852718900FB9E43 /* Assets.xcassets */,
+				895E290A2852718900FB9E43 /* Info.plist */,
+			);
+			path = TopAlbumsWidgetiOS;
+			sourceTree = "<group>";
+		};
 		8974BC8F28524DFE006604D3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8994412F284F4635000B6D7C /* Config.swift */,
 				89B12BE32850F65900AB9816 /* Enums */,
 				890D84C6284F5D8A000123AD /* Models */,
 				89944131284F4CDD000B6D7C /* API */,
@@ -174,7 +184,7 @@
 				8994411C284F4577000B6D7C /* LastfmWidget */,
 				895E28E528526E9A00FB9E43 /* LastFM Widgets */,
 				8974BC8F28524DFE006604D3 /* Shared */,
-				89F962D3284FABF100CF0CAE /* TopAlbumsWidget */,
+				895E29042852718700FB9E43 /* TopAlbumsWidgetiOS */,
 				89F962CE284FABF100CF0CAE /* Frameworks */,
 				8994411B284F4577000B6D7C /* Products */,
 			);
@@ -183,9 +193,8 @@
 		8994411B284F4577000B6D7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8994411A284F4577000B6D7C /* LastfmWidget.app */,
-				89F962CD284FABF100CF0CAE /* TopAlbumsWidgetExtension.appex */,
 				895E28E428526E9A00FB9E43 /* LastFM Widgets.app */,
+				895E29012852718700FB9E43 /* TopAlbumsWidgetiOSExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,7 +206,6 @@
 				89F962C2284FA6AC00CF0CAE /* Views */,
 				8994411D284F4577000B6D7C /* LastfmWidgetApp.swift */,
 				8994411F284F4577000B6D7C /* ContentView.swift */,
-				8994412F284F4635000B6D7C /* Config.swift */,
 				89944121284F457C000B6D7C /* Assets.xcassets */,
 				89944126284F457C000B6D7C /* LastfmWidget.entitlements */,
 				89944123284F457C000B6D7C /* Preview Content */,
@@ -231,6 +239,16 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		89DB8B9828527D1600D265F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89DB8B9928527D2B00D265F6 /* SmallView.swift */,
+				89DB8B9C2852873200D265F6 /* MediumView.swift */,
+				89DB8B9F2852881A00D265F6 /* BackgroundGradient.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		89F962C2284FA6AC00CF0CAE /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,18 +267,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		89F962D3284FABF100CF0CAE /* TopAlbumsWidget */ = {
-			isa = PBXGroup;
-			children = (
-				89F962D4284FABF100CF0CAE /* TopAlbumsWidget.swift */,
-				89F962D6284FABF100CF0CAE /* TopAlbumsWidget.intentdefinition */,
-				89F962D7284FABF300CF0CAE /* Assets.xcassets */,
-				89F962D9284FABF300CF0CAE /* Info.plist */,
-				89F962DA284FABF300CF0CAE /* TopAlbumsWidget.entitlements */,
-			);
-			path = TopAlbumsWidget;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,56 +277,41 @@
 				895E28E028526E9A00FB9E43 /* Sources */,
 				895E28E128526E9A00FB9E43 /* Frameworks */,
 				895E28E228526E9A00FB9E43 /* Resources */,
+				895E29132852718900FB9E43 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				895E290E2852718900FB9E43 /* PBXTargetDependency */,
 			);
 			name = "LastFM Widgets";
+			packageProductDependencies = (
+				89DB8B932852740400D265F6 /* Alamofire */,
+				89DB8BA228528B5800D265F6 /* UIImageColors */,
+			);
 			productName = "LastFM Widgets";
 			productReference = 895E28E428526E9A00FB9E43 /* LastFM Widgets.app */;
 			productType = "com.apple.product-type.application";
 		};
-		89944119284F4577000B6D7C /* LastfmWidget */ = {
+		895E29002852718700FB9E43 /* TopAlbumsWidgetiOSExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89944129284F457C000B6D7C /* Build configuration list for PBXNativeTarget "LastfmWidget" */;
+			buildConfigurationList = 895E29102852718900FB9E43 /* Build configuration list for PBXNativeTarget "TopAlbumsWidgetiOSExtension" */;
 			buildPhases = (
-				89944116284F4577000B6D7C /* Sources */,
-				89944117284F4577000B6D7C /* Frameworks */,
-				89944118284F4577000B6D7C /* Resources */,
-				89F962E3284FABF300CF0CAE /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89F962DE284FABF300CF0CAE /* PBXTargetDependency */,
-			);
-			name = LastfmWidget;
-			packageProductDependencies = (
-				8994412D284F45A1000B6D7C /* Alamofire */,
-			);
-			productName = LastfmWidget;
-			productReference = 8994411A284F4577000B6D7C /* LastfmWidget.app */;
-			productType = "com.apple.product-type.application";
-		};
-		89F962CC284FABF100CF0CAE /* TopAlbumsWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89F962E0284FABF300CF0CAE /* Build configuration list for PBXNativeTarget "TopAlbumsWidgetExtension" */;
-			buildPhases = (
-				89F962C9284FABF100CF0CAE /* Sources */,
-				89F962CA284FABF100CF0CAE /* Frameworks */,
-				89F962CB284FABF100CF0CAE /* Resources */,
+				895E28FD2852718700FB9E43 /* Sources */,
+				895E28FE2852718700FB9E43 /* Frameworks */,
+				895E28FF2852718700FB9E43 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TopAlbumsWidgetExtension;
+			name = TopAlbumsWidgetiOSExtension;
 			packageProductDependencies = (
-				89F962EB284FAF3000CF0CAE /* Alamofire */,
+				89DB8B952852744400D265F6 /* Alamofire */,
+				89DB8BA428528B8B00D265F6 /* UIImageColors */,
 			);
-			productName = TopAlbumsWidgetExtension;
-			productReference = 89F962CD284FABF100CF0CAE /* TopAlbumsWidgetExtension.appex */;
+			productName = TopAlbumsWidgetiOSExtension;
+			productReference = 895E29012852718700FB9E43 /* TopAlbumsWidgetiOSExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -336,10 +327,7 @@
 					895E28E328526E9A00FB9E43 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
-					89944119284F4577000B6D7C = {
-						CreatedOnToolsVersion = 13.3.1;
-					};
-					89F962CC284FABF100CF0CAE = {
+					895E29002852718700FB9E43 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
@@ -354,15 +342,15 @@
 			);
 			mainGroup = 89944111284F4577000B6D7C;
 			packageReferences = (
-				8994412C284F45A1000B6D7C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				89DB8B922852740400D265F6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				89DB8BA128528B5800D265F6 /* XCRemoteSwiftPackageReference "UIImageColors" */,
 			);
 			productRefGroup = 8994411B284F4577000B6D7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				89944119284F4577000B6D7C /* LastfmWidget */,
 				895E28E328526E9A00FB9E43 /* LastFM Widgets */,
-				89F962CC284FABF100CF0CAE /* TopAlbumsWidgetExtension */,
+				895E29002852718700FB9E43 /* TopAlbumsWidgetiOSExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -377,21 +365,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89944118284F4577000B6D7C /* Resources */ = {
+		895E28FF2852718700FB9E43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89944125284F457C000B6D7C /* Preview Assets.xcassets in Resources */,
-				89944122284F457C000B6D7C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89F962CB284FABF100CF0CAE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89B12BE72850FA7200AB9816 /* Assets.xcassets in Resources */,
-				89F962D8284FABF300CF0CAE /* Assets.xcassets in Resources */,
+				89DB8B972852750C00D265F6 /* Assets.xcassets in Resources */,
+				895E29092852718900FB9E43 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,53 +381,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895E290C2852718900FB9E43 /* TopAlbumsWidgetiOS.intentdefinition in Sources */,
+				895E28F328526F0500FB9E43 /* ImageError.swift in Sources */,
+				895E28F528526F0B00FB9E43 /* LastFMTopAlbumsResponse.swift in Sources */,
 				895E28E928526E9A00FB9E43 /* ContentView.swift in Sources */,
 				895E28E728526E9A00FB9E43 /* LastFM_WidgetsApp.swift in Sources */,
+				895E28F628526F0D00FB9E43 /* BasicAlbum.swift in Sources */,
+				895E28F228526F0300FB9E43 /* TopAlbumsError.swift in Sources */,
+				895E28FC2852709500FB9E43 /* Config.swift in Sources */,
+				895E28F728526F1200FB9E43 /* API.swift in Sources */,
+				895E28F428526F0900FB9E43 /* LastFMTopArtistsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89944116284F4577000B6D7C /* Sources */ = {
+		895E28FD2852718700FB9E43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F962DC284FABF300CF0CAE /* TopAlbumsWidget.intentdefinition in Sources */,
-				89F962C8284FAAB400CF0CAE /* TopAlbumsView.swift in Sources */,
-				89944120284F4577000B6D7C /* ContentView.swift in Sources */,
-				89F962C6284FAA6600CF0CAE /* LastFMTopAlbumsResponse.swift in Sources */,
-				89F962E8284FAD7000CF0CAE /* BasicAlbum.swift in Sources */,
-				8994411E284F4577000B6D7C /* LastfmWidgetApp.swift in Sources */,
-				89944130284F4635000B6D7C /* Config.swift in Sources */,
-				89B12BE52850F67200AB9816 /* TopAlbumsError.swift in Sources */,
-				8974BC8A28524D60006604D3 /* ImageError.swift in Sources */,
-				890D84C8284F5DD4000123AD /* API.swift in Sources */,
-				89F962C1284FA01D00CF0CAE /* LastFMTopArtistsResponse.swift in Sources */,
-				89F962C4284FA6BF00CF0CAE /* TopArtistView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89F962C9284FABF100CF0CAE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89B12BE62850F67200AB9816 /* TopAlbumsError.swift in Sources */,
-				89F962DB284FABF300CF0CAE /* TopAlbumsWidget.intentdefinition in Sources */,
-				89F962E6284FAD3200CF0CAE /* LastFMTopAlbumsResponse.swift in Sources */,
-				89F962E5284FAD2A00CF0CAE /* LastFMTopArtistsResponse.swift in Sources */,
-				89F962ED284FB27E00CF0CAE /* Config.swift in Sources */,
-				89F962D5284FABF100CF0CAE /* TopAlbumsWidget.swift in Sources */,
-				89F962EA284FAF1A00CF0CAE /* API.swift in Sources */,
-				89F962E9284FADAE00CF0CAE /* BasicAlbum.swift in Sources */,
-				8974BC8B28524D6A006604D3 /* ImageError.swift in Sources */,
+				895E2920285271AD00FB9E43 /* ImageError.swift in Sources */,
+				895E290B2852718900FB9E43 /* TopAlbumsWidgetiOS.intentdefinition in Sources */,
+				895E2921285271AD00FB9E43 /* TopAlbumsError.swift in Sources */,
+				895E291B285271AD00FB9E43 /* LastFMTopAlbumsResponse.swift in Sources */,
+				895E291C285271AD00FB9E43 /* BasicAlbum.swift in Sources */,
+				89DB8BA02852881A00D265F6 /* BackgroundGradient.swift in Sources */,
+				895E291F285271AD00FB9E43 /* Config.swift in Sources */,
+				89DB8B9E2852874900D265F6 /* MediumView.swift in Sources */,
+				89DB8B9B28527D5800D265F6 /* SmallView.swift in Sources */,
+				895E29062852718700FB9E43 /* TopAlbumsWidgetiOS.swift in Sources */,
+				895E291E285271AD00FB9E43 /* LastFMTopArtistsResponse.swift in Sources */,
+				895E291D285271AD00FB9E43 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		89F962DE284FABF300CF0CAE /* PBXTargetDependency */ = {
+		895E290E2852718900FB9E43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 89F962CC284FABF100CF0CAE /* TopAlbumsWidgetExtension */;
-			targetProxy = 89F962DD284FABF300CF0CAE /* PBXContainerItemProxy */;
+			target = 895E29002852718700FB9E43 /* TopAlbumsWidgetiOSExtension */;
+			targetProxy = 895E290D2852718900FB9E43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,6 +427,7 @@
 		895E28EF28526E9B00FB9E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,9 +436,10 @@
 				DEVELOPMENT_TEAM = U3CH3X8GK4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "LastFM-Widgets-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -487,6 +460,7 @@
 		895E28F028526E9B00FB9E43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -495,9 +469,10 @@
 				DEVELOPMENT_TEAM = U3CH3X8GK4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "LastFM-Widgets-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -509,6 +484,65 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.wissehes.LastFM-Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		895E29112852718900FB9E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3CH3X8GK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TopAlbumsWidgetiOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TopAlbumsWidgetiOS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.wissehes.LastFM-Widgets.TopAlbumsWidgetiOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		895E29122852718900FB9E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3CH3X8GK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TopAlbumsWidgetiOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TopAlbumsWidgetiOS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.wissehes.LastFM-Widgets.TopAlbumsWidgetiOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -629,124 +663,6 @@
 			};
 			name = Release;
 		};
-		8994412A284F457C000B6D7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = LastfmWidget/LastfmWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LastfmWidget/Preview Content\"";
-				DEVELOPMENT_TEAM = U3CH3X8GK4;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LastfmWidget/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.wissehes.LastfmWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		8994412B284F457C000B6D7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = LastfmWidget/LastfmWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LastfmWidget/Preview Content\"";
-				DEVELOPMENT_TEAM = U3CH3X8GK4;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LastfmWidget/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.wissehes.LastfmWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		89F962E1284FABF300CF0CAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = TopAlbumsWidget/TopAlbumsWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U3CH3X8GK4;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TopAlbumsWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TopAlbumsWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.wissehes.LastfmWidget.TopAlbumsWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		89F962E2284FABF300CF0CAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = TopAlbumsWidget/TopAlbumsWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U3CH3X8GK4;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TopAlbumsWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TopAlbumsWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.wissehes.LastfmWidget.TopAlbumsWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -755,6 +671,15 @@
 			buildConfigurations = (
 				895E28EF28526E9B00FB9E43 /* Debug */,
 				895E28F028526E9B00FB9E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		895E29102852718900FB9E43 /* Build configuration list for PBXNativeTarget "TopAlbumsWidgetiOSExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				895E29112852718900FB9E43 /* Debug */,
+				895E29122852718900FB9E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -768,28 +693,10 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89944129284F457C000B6D7C /* Build configuration list for PBXNativeTarget "LastfmWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8994412A284F457C000B6D7C /* Debug */,
-				8994412B284F457C000B6D7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89F962E0284FABF300CF0CAE /* Build configuration list for PBXNativeTarget "TopAlbumsWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89F962E1284FABF300CF0CAE /* Debug */,
-				89F962E2284FABF300CF0CAE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8994412C284F45A1000B6D7C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		89DB8B922852740400D265F6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -797,18 +704,36 @@
 				kind = branch;
 			};
 		};
+		89DB8BA128528B5800D265F6 /* XCRemoteSwiftPackageReference "UIImageColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jathu/UIImageColors.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8994412D284F45A1000B6D7C /* Alamofire */ = {
+		89DB8B932852740400D265F6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8994412C284F45A1000B6D7C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 89DB8B922852740400D265F6 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		89F962EB284FAF3000CF0CAE /* Alamofire */ = {
+		89DB8B952852744400D265F6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8994412C284F45A1000B6D7C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 89DB8B922852740400D265F6 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		89DB8BA228528B5800D265F6 /* UIImageColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89DB8BA128528B5800D265F6 /* XCRemoteSwiftPackageReference "UIImageColors" */;
+			productName = UIImageColors;
+		};
+		89DB8BA428528B8B00D265F6 /* UIImageColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89DB8BA128528B5800D265F6 /* XCRemoteSwiftPackageReference "UIImageColors" */;
+			productName = UIImageColors;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
